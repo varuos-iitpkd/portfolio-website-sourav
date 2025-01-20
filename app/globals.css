@@ -17,11 +17,12 @@
     --radius: 0.5rem;
   }
   body {
-    @apply font-primary bg-primary text-white leading-loose;
+    @apply font-primary bg-primary text-gray-800 leading-loose scrollbar scrollbar-thumb-slate-300 scrollbar-track-transparent;
     /* @apply font-primary bg-primary text-gray-900 leading-loose; */
   }
+
   .h1 {
-    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
+    @apply text-[45px] xl:text-[80px]  leading-[1.1] font-semibold;
   }
   .h2 {
     @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;

@@ -20,10 +20,10 @@ const links = [
     name: "work",
     path: "/work",
   },
-  {
-    name: "contact",
-    path: "/contact",
-  },
+  // {
+  //   name: "contact",
+  //   path: "/contact",
+  // },
 ];
 
 function Nav() {
@@ -38,7 +38,7 @@ function Nav() {
             key={index}
             className={`${
               link.path === pathname && "text-accent border-b-2 border-accent"
-            } capitalize font-medium hover:text-accent transition-all`}
+            } capitalize hover:text-accent transition-all text-gray-800 font-semibold`}
           >
             {link.name}
           </Link>

@@ -3,12 +3,16 @@
 import Link from "next/link";
 
 import { FaGithub, FaLinkedin, FaYoutube, FaTwitter } from "react-icons/fa";
+import { TbBrandLeetcode } from "react-icons/tb";
 
 const socials = [
-  { icon: <FaGithub />, path: "https://www.google.com/" },
-  { icon: <FaLinkedin />, path: "https://www.google.com/" },
-  { icon: <FaYoutube />, path: "https://www.google.com/" },
-  { icon: <FaTwitter />, path: "https://www.google.com/" },
+  { icon: <FaGithub />, path: "https://github.com/varuos-iitpkd" },
+  {
+    icon: <FaLinkedin />,
+    path: "https://www.linkedin.com/in/sourav-sen-12b89b8a/",
+  },
+  { icon: <TbBrandLeetcode />, path: "https://leetcode.com/u/SouravSen/" },
+  // { icon: <FaTwitter />, path: "https://www.google.com/" },
 ];
 
 function Social({ containerStyles, iconStyles }) {

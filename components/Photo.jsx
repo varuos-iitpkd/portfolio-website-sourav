@@ -28,7 +28,7 @@ function Photo() {
               ease: "easeOut",
             },
           }}
-          className="rounded-full w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] absolute overflow-hidden transform scale-90"
+          className="rounded-full w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] absolute overflow-hidden transform scale-90 border-2 border-dashed border-slate-300 animate-bobble bg-slate-200"
         >
           <Image
             src="/assets/profile.png"
@@ -36,7 +36,7 @@ function Photo() {
             quality={100}
             fill
             alt="profile picture"
-            className="object-contain w-full h-fulltranform scale-110"
+            className="object-contain w-full h-full tranform scale-110 translate-y-4 "
           />
         </motion.div>
         {/* circle */}
@@ -46,11 +46,11 @@ function Photo() {
           viewBox="0 0 506 506"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <motion.circle
+          {/* <motion.circle
             cx="253"
             cy="253"
             r="250"
-            stroke="#00ff99"
+            stroke="#F93827"
             strokeWidth="4"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -64,7 +64,7 @@ function Photo() {
               repeat: Infinity,
               repeatType: "reverse",
             }}
-          />
+          /> */}
         </motion.svg>
       </motion.div>
     </div>

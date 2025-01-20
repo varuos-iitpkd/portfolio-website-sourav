@@ -1,14 +1,20 @@
-import { JetBrains_Mono } from "next/font/google";
+import { Inter, Nunito } from "next/font/google";
 import "./globals.css";
 
 // Components
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
+import Pattern from "@/components/Pattern";
 
-const jetbrainsMono = JetBrains_Mono({
+const jetbrainsMono = Nunito({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-  variable: "--font-jetbrainsMono",
+  weight: ["200", "300", "400", "500", "600", "700"],
+  variable: "--font-nunito",
+});
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700"],
+  variable: "--font-inter",
 });
 
 export const metadata = {
@@ -19,7 +25,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${jetbrainsMono.variable}`}>
+      <body className={`${jetbrainsMono.variable} relative`}>
+        {/* <Pattern /> */}
+        <div className="absolute top-0 left-0 z-[-1] h-full w-full heropattern-wiggle-slate-200"></div>
         <Header />
         <PageTransition>{children}</PageTransition>
       </body>
