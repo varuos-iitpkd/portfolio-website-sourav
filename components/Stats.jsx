@@ -47,6 +47,11 @@ function Stats() {
                   delay={0}
                   className="text-4xl xl:text-6xl font-extrabold"
                 />
+                {index === 0 && (
+                  <span className="text-6xl font-bold transform translate-x-[-15px]">
+                    +
+                  </span>
+                )}
                 <p
                   className={`${
                     item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"

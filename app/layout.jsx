@@ -4,7 +4,6 @@ import "./globals.css";
 // Components
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
-import Pattern from "@/components/Pattern";
 
 const jetbrainsMono = Nunito({
   subsets: ["latin"],
@@ -25,7 +24,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${jetbrainsMono.variable} relative`}>
+      <body
+        className={`${jetbrainsMono.variable} relative scrollbar-gutter-stable`}
+      >
         {/* <Pattern /> */}
         <div className="absolute top-0 left-0 z-[-1] h-full w-full heropattern-wiggle-slate-200"></div>
         <Header />

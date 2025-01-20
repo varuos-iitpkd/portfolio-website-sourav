@@ -32,7 +32,7 @@ const services = [
 
 import { motion } from "framer-motion";
 
-function Services() {
+function Blogs() {
   return (
     <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
       <div className="container mx-auto">
@@ -79,4 +79,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default Blogs;

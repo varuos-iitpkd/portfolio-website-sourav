@@ -28,7 +28,7 @@ function Photo() {
               ease: "easeOut",
             },
           }}
-          className="rounded-full w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] absolute overflow-hidden transform scale-90 border-2 border-dashed border-slate-300 animate-bobble bg-slate-200"
+          className="rounded-full w-[270px] h-[270px] xl:w-[498px] xl:h-[498px] absolute overflow-hidden transform scale-90 border-2 border-dashed border-slate-300 animate-bobble bg-slate-200"
         >
           <Image
             src="/assets/profile.png"
@@ -36,7 +36,7 @@ function Photo() {
             quality={100}
             fill
             alt="profile picture"
-            className="object-contain w-full h-full tranform scale-110 translate-y-4 "
+            className="object-contain w-full h-full tranform scale-110 translate-y-4"
           />
         </motion.div>
         {/* circle */}
