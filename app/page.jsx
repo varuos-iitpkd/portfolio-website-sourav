@@ -13,7 +13,7 @@ function Home() {
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-2 xl:pb-2 transform xl:scale-75 xl:translate-y-[-20px]">
+        <div className="flex flex-col xl:flex-row items-center justify-around xl:pt-2 xl:pb-2 transform xl:scale-75 xl:translate-y-[-20px]">
           {/* text */}
           <div className="mt-4 xl:mt-0 text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">

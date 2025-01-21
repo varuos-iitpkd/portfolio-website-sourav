@@ -56,7 +56,7 @@ function MobileNav() {
       <SheetTrigger className="flex justify-center items-center">
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
-      <SheetContent className="flex flex-col">
+      <SheetContent className="flex flex-col overflow-scroll">
         {/* logo */}
         <div className="mt-20 mb-10 text-center text-2xl">
           <Link href="/">
