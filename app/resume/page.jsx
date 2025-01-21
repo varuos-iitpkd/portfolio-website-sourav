@@ -15,10 +15,6 @@ import { PiLaptopDuotone } from "react-icons/pi";
 
 import Head from "next/head";
 
-// export const metadata = {
-//   title: "Resume",
-// };
-
 // about data
 const about = {
   title: "About me",

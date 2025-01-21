@@ -31,9 +31,9 @@
     @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
   }
   .text-outline {
-    -webkit-text-stroke: 1px #ffffff;
+    -webkit-text-stroke: 1.5px #6b7280;
   }
   .text-outline-hover {
-    -webkit-text-stroke: 1px #00ff99;
+    -webkit-text-stroke: 1.5px #f93827;
   }
 }

@@ -3,29 +3,29 @@
 import { BsArrowDownRight } from "react-icons/bs";
 import Link from "next/link";
 
-const services = [
+const blogs = [
   {
     num: "01",
-    title: "Web Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit!",
+    title: "JS Inernals",
+    description: "How Javascript works behind the scenes.",
     href: "",
   },
   {
     num: "02",
-    title: "UI/UX Design",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit!",
+    title: "React Rendering",
+    description: "How rendering works in React.",
     href: "",
   },
   {
     num: "03",
-    title: "Logo Design",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit!",
+    title: "JS Prototypical Inheritance",
+    description: "How prototypical inheritance works in Javascript.",
     href: "",
   },
   {
     num: "04",
-    title: "SEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit!",
+    title: "RCC vs RSC",
+    description: "Key differences between RCC and RSC in Next.js",
     href: "",
   },
 ];
@@ -43,7 +43,7 @@ function Blogs() {
           content="Welcome to the Projects Page of our application."
         />
       </head>
-      <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
+      <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0 transform xl:scale-75">
         <div className="container mx-auto">
           <motion.div
             initial={{ opacity: 0 }}
@@ -53,30 +53,32 @@ function Blogs() {
             }}
             className="grid grid-cols-1 md:grid-cols-2 gap-[60px]"
           >
-            {services.map((service, index) => {
+            {blogs.map((blog, index) => {
               return (
                 <div
                   key={index}
-                  className="flex flex-1 flex-col justify-center gap-6 group"
+                  className="flex flex-1 flex-col justify-center gap-6 group border border-gray-800 p-4 rounded-xl"
                 >
                   {/* top */}
                   <div className="w-full flex justify-between">
                     <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
-                      {service.num}
+                      {blog.num}
                     </div>
                     <Link
-                      href={service.href}
-                      className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
+                      href={blog.href}
+                      className="w-[60px] h-[60px] rounded-full bg-gray-800 group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
                     >
                       <BsArrowDownRight className="text-primary text-3xl" />
                     </Link>
                   </div>
                   {/* title */}
-                  <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
-                    {service.title}
+                  <h2 className="text-[32px] font-bold leading-none text-gray-800 group-hover:text-accent transition-all duration-500">
+                    {blog.title}
                   </h2>
                   {/* description */}
-                  <p className="text-white/60">{service.description}</p>
+                  <p className="text-gray-600 font-semibold text-xl">
+                    {blog.description}
+                  </p>
                   {/* border */}
                   <div className="border-b border-white/20 w-full"></div>
                 </div>

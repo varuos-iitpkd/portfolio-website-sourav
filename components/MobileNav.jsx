@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
 import { Button } from "./ui/button";
+import { FaCheckCircle } from "react-icons/fa";
+import { useState } from "react";
 
 const links = [
   {
@@ -30,7 +32,23 @@ const links = [
   // },
 ];
 
+const emailId = "sunsouravsen@gmail.com";
+
 function MobileNav() {
+  const [isCopied, setisCopied] = useState(false);
+
+  const copyToClipboard = (text) => {
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {
+        setisCopied(true);
+        // alert("Eamil Id copied to clipboard!");
+      })
+      .catch((err) => {
+        setisCopied(false);
+        // console.error("Failed to copy text: ", err);
+      });
+  };
   const pathname = usePathname();
 
   return (
@@ -64,7 +82,18 @@ function MobileNav() {
             );
           })}
           <Link href="/contact">
-            <Button>Contact me</Button>
+            <Button onClick={() => copyToClipboard(emailId)}>
+              {isCopied ? (
+                <span className="flex items-center justify-center gap-2">
+                  <span>
+                    <FaCheckCircle />
+                  </span>
+                  Email Copied
+                </span>
+              ) : (
+                "Email"
+              )}
+            </Button>
           </Link>
         </nav>
       </SheetContent>
