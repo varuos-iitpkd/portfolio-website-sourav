@@ -28,7 +28,7 @@ function Home() {
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <a href="/resume.pdf" download="resume.pdf">
+              <a href="/Sourav_Sen_resume.pdf" download="Sourav_Sen_resume.pdf">
                 <Button
                   variant="outline"
                   size="lg"
